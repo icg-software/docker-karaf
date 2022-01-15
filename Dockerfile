@@ -1,9 +1,8 @@
-FROM spalarus/karaf-base:1.0.2
+FROM ghcr.io/icg-software/karaf-base:latest
 
-MAINTAINER spalarus <s.palarus@googlemail.com>
+LABEL maintainer="icgsoftware <j_liepe@icg-software.de>"
 
-
-ARG KARAF_VERSION=4.2.10
+ARG KARAF_VERSION=4.2.15
 
 WORKDIR ${KARAF_HOME}
 USER karaf
