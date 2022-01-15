@@ -7,7 +7,7 @@ ARG KARAF_VERSION=4.2.15
 WORKDIR ${KARAF_HOME}
 USER karaf
 
-RUN wget http://www-us.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz && \
+RUN wget https://www.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz && \
     /tmp/installer.sh apache-karaf-${KARAF_VERSION}.tar.gz && \
     rm /tmp/karaf.valid
 
