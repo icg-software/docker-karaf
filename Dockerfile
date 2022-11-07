@@ -2,7 +2,7 @@ FROM ghcr.io/icg-software/karaf-base:latest
 
 LABEL maintainer="icgsoftware <j_liepe@icg-software.de>"
 
-ARG KARAF_VERSION=4.2.15
+ARG KARAF_VERSION=4.2.16
 
 WORKDIR ${KARAF_HOME}
 USER karaf
