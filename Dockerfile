@@ -4,6 +4,8 @@ LABEL maintainer="icgsoftware <j_liepe@icg-software.de>"
 
 ARG KARAF_VERSION=4.2.16
 
+RUN chown karaf.karaf /entrypoint.sh
+
 WORKDIR ${KARAF_HOME}
 USER karaf
 
